@@ -18,6 +18,17 @@ The top-view planner produces smoother trajectories that yield conservative trac
 - Evaluates two diffusion planners: a top-view long-horizon planner and an FPV-based two-stage planner.
 - Demonstrates zero-shot sim-to-real deployment on Crazyflie 2.1 drones with 100% trajectory generation across all evaluated scenarios and 92% overall experimental success rate.
 
+## 🧠 System Architecture
+
+The overall system combines semantic scene understanding, diffusion-based planning, reactive tracking, and compliant swarm control. A top-view scene image is processed in parallel by:
+
+- a **VLM-RAG module** to classify obstacle types and retrieve safe impedance parameters
+- a **diffusion planner** to generate the global path
+- an **APF-based reactive layer** to track the generated trajectory online
+- an **impedance control layer** to maintain formation and adapt drone-obstacle interactions for hard and soft obstacles
+
+![System Architecture](Assests/System_arhitecture_v2_compressed.png)
+
 ## 🛠️ Installation
 
 
