@@ -261,6 +261,13 @@ Short summary:
 
 [![Watch Demo](https://img.youtube.com/vi/J-Ec2arIJVw/0.jpg)](https://www.youtube.com/watch?v=J-Ec2arIJVw)
 
+## Acknowledgements
+
+This work was inspired by:
+https://github.com/jingGM/DTG
+
+We reimplemented and extended the approach for our task.
+
 ## 📚 Citation
 
 arXiv: https://arxiv.org/abs/2603.09031
